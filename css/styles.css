@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #57b84660;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: url(../images/ggfgfgffdfvvvv.jpg);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.content-left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.logo img:hover {
+  transition: all 0.45s;
+  transform: scale(1.2);
+  transform: rotate(360deg);
+}
+
+.content-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form h2 {
+  margin-bottom: 30px;
+}
+
+input[type="email"] {
+  background-image: url(../images/email.png);
+  background-position: 30px center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+input[type="email"]:focus {
+  transition: all 0.5s;
+  background-image: url(../images/email2.png);
+  background-position: 30px center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+input[type="password"] {
+  background-image: url(../images/lock.png);
+  background-position: 30px center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+input[type="password"]:focus {
+  transition: all 0.5s;
+  background-image: url(../images/lock2.png);
+  background-position: 30px center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+form input {
+  min-width: 55%;
+  background: #e6e6e6;
+  color: #666;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  font-size: 15px;
+  padding: 0 30px 0 68px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  outline: none;
+}
+
+form input:focus {
+  transition: all 0.5s;
+  box-shadow: 0px 0px 5px 5px rgba(38, 255, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(38, 255, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(38, 255, 0, 0.75);
+}
+
+form button {
+  background-color: #57b846;
+  min-width: 55%;
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 18px -8px rgba(1, 1, 1, 0.9);
+}
+
+form button:hover {
+  transition: all 0.5s;
+  background-color: #333;
+}
+
+.fogot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.fogot a {
+  color: #666;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fogot a:hover {
+  transition: all 0.5s;
+  color: black;
+}
+
+.fogot span {
+  background-color: #33333350;
+  padding: 8px;
+  border-radius: 8px;
+  color: #e6e6e6;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+  .content-right {
+    margin-top: 40px;
+  }
+}
